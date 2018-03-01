@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+platforms
+
+plugins
+
+src2
+
+webpack
+
+www
+
+dist
