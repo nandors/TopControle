@@ -8,6 +8,8 @@ const routerOptions = [
   { path: '/signin', component: 'Signin' },
   { path: '/signup', component: 'Signup' },
   { path: '/book', component: 'Book', meta: { requiresAuth: true } },
+  { path: '/loja', component: 'Loja', meta: { requiresAuth: true } },
+  { path: '/loja2', component: 'Loja2', meta: { requiresAuth: true } },
   { path: '/listmenu', component: 'ListMenu' },
   { path: '/home', component: 'Home', meta: { requiresAuth: true } }
 ]

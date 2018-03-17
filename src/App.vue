@@ -148,7 +148,9 @@
       cadastroItems () {
         if (this.isAuthenticated) {
           return [
-            { title: 'Book', path: 'book', icon: 'lock_open' }
+            { title: 'Book', path: 'book', icon: 'lock_open' },
+            { title: 'Lojas', path: 'loja', icon: 'face' }
+
           ]
         } else {
           return [
