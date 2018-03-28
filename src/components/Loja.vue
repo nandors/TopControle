@@ -2,10 +2,10 @@
   <div>
     <v-form ref="form" lazy-validation>
      <v-dialog v-model="dialog" width="800px">
-      <v-btn color="primary" dark slot="activator" class="mb-2">Nova Loja</v-btn>
+      <v-btn color="primary" dark slot="activator" class="mb-2">Nova {{ titulo }}</v-btn>
         <v-card>
           <v-card-title>
-            <span class="headline">Cadastro de Lojas</span>
+            <span class="headline">Cadastro de {{ titulo }}</span>
           </v-card-title>
           <v-card-text>
             <v-container grid-list-md>
@@ -95,7 +95,7 @@
     </v-form>
       <v-card>
         <v-card-title>
-          Lojas cadastrados
+          {{ titulo }}s cadastrados
           <v-spacer></v-spacer>
           <v-text-field
             append-icon="search"
@@ -141,7 +141,7 @@
   </div>
 </template>
 <script>
-  import Dataset from '../components/Datasetrest';
+  import Dataset from '../components/Datasetrest'
   export default {
     extends: Dataset,
     data: function () {
@@ -164,7 +164,9 @@
           uf: '',
           fone: '',
           obs: ''
-        }
+        },
+        nometabela: 'lojas',
+        titulo: 'Loja'
       }
     }
   }

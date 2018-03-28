@@ -19,16 +19,13 @@
           </v-toolbar>
           <v-list>
             <v-list-group v-for="item in menuItem" :value="item.active" v-bind:key="item.title">
-              <v-list-tile slot="item" @click="">
+              <v-list-tile slot="activator" @click="">
                 <v-list-tile-action>
                   <v-icon>{{ item.action }}</v-icon>
                 </v-list-tile-action>
                 <v-list-tile-content>
                   <v-list-tile-title>{{ item.title }}</v-list-tile-title>
                 </v-list-tile-content>
-                <v-list-tile-action>
-                  <v-icon>keyboard_arrow_down</v-icon>
-                </v-list-tile-action>
               </v-list-tile>
 
               <v-list-tile
@@ -78,7 +75,7 @@
         <v-list>
           <v-list-tile v-for="item in cadastroItems" :key="item.title" :to="item.path" @click="">
             <v-icon left>{{ item.icon }}</v-icon>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title  v-text="item.title"></v-list-tile-title>
           </v-list-tile>
         </v-list>
       </v-menu>
@@ -123,7 +120,7 @@
         fixed: false,
         miniVariant: false,
         right: true,
-        rightDrawer: false,
+        rightDrawer: false
       }
     },
     computed: {
@@ -136,7 +133,7 @@
       usuarioItems () {
         if (this.isAuthenticated) {
           return [
-            { title: 'Home', path: 'home', icon: 'home' },
+            { title: 'Home', path: 'home', icon: 'home' }
           ]
         } else {
           return [
@@ -148,8 +145,20 @@
       cadastroItems () {
         if (this.isAuthenticated) {
           return [
-            { title: 'Book', path: 'book', icon: 'lock_open' },
-            { title: 'Lojas', path: 'loja', icon: 'face' }
+            { title: 'Lojas', path: 'loja', icon: '' },
+            { title: 'Clientes', path: 'cliente', icon: '' },
+            { title: 'Fornecedores', path: 'fornecedor', icon: '' },
+            { title: 'Localidades', path: 'localidades', icon: '' },
+            { title: 'Produtos', path: 'produtos', icon: '' },
+            { title: 'Seções', path: 'secao', icon: '' },
+            { title: 'Pedidos', path: 'pedido', icon: '' },
+            { title: 'Tipo', path: 'tipo', icon: '' },
+            { title: 'Estabelecimentos', path: 'colegio', icon: '' },
+            { title: 'Produtos/Serviços', path: 'produtoserv', icon: '' },
+            { title: 'Golas', path: 'golas', icon: '' },
+            { title: 'Punhos', path: 'punhos', icon: '' },
+            { title: 'Ribanas', path: 'ribana', icon: '' },
+            { title: 'Vendedor', path: 'vendedor', icon: '' },
 
           ]
         } else {
@@ -159,52 +168,45 @@
       },
       menuItem () {
         return [
-           {
-             action: 'local_activity',
-             title: 'Cadastro',
-             items:  this.cadastroItems
-           },
-           {
-             action: 'restaurant',
-             title: 'Usuário',
-             items: this.usuarioItems
-           },
-           {
-             action: 'school',
-             title: 'Education',
-             items: [
-               { title: 'List Item' }
-             ]
-           },
-           {
-             action: 'directions_run',
-             title: 'Family',
-             items: [
-               { title: 'List Item' }
-             ]
-           },
-           {
-             action: 'healing',
-             title: 'Health',
-             items: [
-               { title: 'List Item' }
-             ]
-           },
-           {
-             action: 'content_cut',
-             title: 'Office',
-             items: [
-               { title: 'List Item' }
-             ]
-           },
-           {
-             action: 'local_offer',
-             title: 'Promotions',
-             items: [
-               { title: 'List Item' }
-             ]
-           }
-         ]
+          { action: 'local_activity',
+            title: 'Cadastro',
+            items: this.cadastroItems
+          },
+          { action: 'restaurant',
+            title: 'Usuário',
+            items: this.usuarioItems
+          },
+          { action: 'school',
+            title: 'Education',
+            items: [
+              { title: 'List Item' }
+            ]
+          },
+          { action: 'directions_run',
+            title: 'Family',
+            items: [
+              { title: 'List Item' }
+            ]
+          },
+          { action: 'healing',
+            title: 'Health',
+            items: [
+              { title: 'List Item' }
+            ]
+          },
+          { action: 'content_cut',
+            title: 'Office',
+            items: [
+              { title: 'List Item' }
+            ]
+          },
+          { action: 'local_offer',
+            title: 'Promotions',
+            items: [
+              { title: 'List Item' }
+            ]
+          }
+        ]
       }
     },
     methods: {
@@ -214,3 +216,8 @@
     }
   }
 </script>
+<style>
+  .toolbar__title {
+    font-size: 16px;
+  }
+</style>

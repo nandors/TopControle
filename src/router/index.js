@@ -9,10 +9,23 @@ const routerOptions = [
   { path: '/signup', component: 'Signup' },
   { path: '/book', component: 'Book', meta: { requiresAuth: true } },
   { path: '/loja', component: 'Loja', meta: { requiresAuth: true } },
-  { path: '/loja2', component: 'Loja2', meta: { requiresAuth: true } },
-  { path: '/listmenu', component: 'ListMenu' },
-  { path: '/home', component: 'Home', meta: { requiresAuth: true } }
+  { path: '/cliente', component: 'Cliente', meta: { requiresAuth: true } },
+  { path: '/home', component: 'Home', meta: { requiresAuth: true } },
+  { path: '/fornecedor', component: 'Fornecedor', meta: { requiresAuth: true } },
+  { path: '/localidades', component: 'Localidades', meta: { requiresAuth: true } },
+  { path: '/produtos', component: 'Produtos', meta: { requiresAuth: true } },
+  { path: '/secao', component: 'Secao', meta: { requiresAuth: true } },
+  { path: '/pedido', component: 'Pedido', meta: { requiresAuth: true } },
+  { path: '/tipo', component: 'Tipo', meta: { requiresAuth: true } },
+  { path: '/colegio', component: 'Colegio', meta: { requiresAuth: true } },
+  { path: '/produtosev', component: 'Produtoserv', meta: { requiresAuth: true } },
+  { path: '/golas', component: 'Golas', meta: { requiresAuth: true } },
+  { path: '/punhos', component: 'Punhos', meta: { requiresAuth: true } },
+  { path: '/ribana', component: 'Ribana', meta: { requiresAuth: true } },
+  { path: '/pdf', component: 'Pdf', meta: { requiresAuth: true } },
+  { path: '/vendedor', component: 'Vendedor', meta: { requiresAuth: true } }
 ]
+
 
 const routes = routerOptions.map(route => {
   return {

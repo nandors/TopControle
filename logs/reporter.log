@@ -1,0 +1,67 @@
+2018-03-27T18:19:11.371Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: jsreport.config.json
+2018-03-27T18:19:11.375Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-03-27T18:19:11.448Z - info: Searching for available extensions in C:\phonegap\TopControle\
+2018-03-27T18:19:11.454Z - info: Extensions location cache not found, crawling directories
+2018-03-27T18:21:23.518Z - info: Found 30 extensions
+2018-03-27T18:21:23.579Z - info: Using extension import-export
+2018-03-27T18:21:26.312Z - info: Using extension tags
+2018-03-27T18:21:26.375Z - info: Using extension templates
+2018-03-27T18:21:26.421Z - info: Using extension jsrender
+2018-03-27T18:21:26.427Z - info: Using extension cli
+2018-03-27T18:21:26.431Z - info: Using extension handlebars
+2018-03-27T18:21:26.439Z - info: Using extension debug
+2018-03-27T18:21:26.444Z - info: Using extension express
+2018-03-27T18:21:28.302Z - info: Using extension fop-pdf
+2018-03-27T18:21:28.713Z - info: Using extension phantom-pdf
+2018-03-27T18:21:29.199Z - info: Using extension fs-store
+2018-03-27T18:21:33.072Z - info: Using extension authorization
+2018-03-27T18:21:33.353Z - info: Using extension images
+2018-03-27T18:21:33.742Z - info: Using extension child-templates
+2018-03-27T18:21:33.775Z - info: Using extension browser-client
+2018-03-27T18:21:33.805Z - info: Using extension licensing
+2018-03-27T18:21:34.444Z - info: Using extension data
+2018-03-27T18:21:34.741Z - info: Using extension text
+2018-03-27T18:21:34.755Z - info: Using extension reports
+2018-03-27T18:21:35.070Z - info: Using extension resources
+2018-03-27T18:21:35.437Z - info: Using extension base
+2018-03-27T18:21:35.454Z - info: Using extension studio
+2018-03-27T18:21:36.198Z - info: Using extension html-to-xlsx
+2018-03-27T18:21:37.302Z - info: Using extension scripts
+2018-03-27T18:21:37.717Z - info: Using extension assets
+2018-03-27T18:21:37.817Z - info: Using extension scheduling
+2018-03-27T18:21:38.035Z - info: Using extension xlsx
+2018-03-27T18:21:41.039Z - info: Using extension sample-template
+2018-03-27T18:21:41.442Z - info: Using extension public-templates
+2018-03-27T18:21:41.806Z - info: Initializing fs storage at C:\phonegap\TopControle\data
+2018-03-27T18:21:42.151Z - info: Creating default express app.
+2018-03-27T18:21:42.862Z - info: jsreport server successfully started on http port: 5488
+2018-03-27T18:21:43.134Z - info: Verifying license key free
+2018-03-27T18:21:43.137Z - info: Using free license
+2018-03-27T18:21:43.701Z - info: reporter initialized
+2018-03-28T12:00:09.331Z - info: Starting rendering request 1 (user: null) requestId=1
+2018-03-28T12:00:09.375Z - info: Rendering template {shortid:HJH11D83ce, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=1
+2018-03-28T12:00:11.651Z - error: Error when processing render request Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\phonegap\TopControle\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+    at module.exports (C:\phonegap\TopControle\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\phonegap\TopControle\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:744:12) requestId=1
+2018-03-28T12:00:11.659Z - error: Error during processing request: http://localhost:5488/api/report/Orders details: Error during rendering report: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything Error: Unsupported module in scripts: http. To enable require on particular module, you need to update the configuration as {"scripts": { "allowedModules": ["http"] } } ... Alternatively you can also set "*" to allowedModules to enable everything
+    at _require (C:\phonegap\TopControle\node_modules\jsreport-scripts\lib\scriptEvalChild.js:44:11)
+    at evalmachine.<anonymous>:2:12
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+    at module.exports (C:\phonegap\TopControle\node_modules\jsreport-scripts\lib\scriptEvalChild.js:123:6)
+    at process.<anonymous> (C:\phonegap\TopControle\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:744:12)
+2018-03-28T12:03:20.429Z - info: Starting rendering request 2 (user: null) requestId=2
+2018-03-28T12:03:20.438Z - info: Rendering template {shortid:rkJTnK2ce, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=2
+2018-03-28T12:03:35.177Z - info: Rendering request 2 finished in 14749 ms requestId=2

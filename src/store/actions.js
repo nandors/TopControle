@@ -37,5 +37,12 @@ export const actions = {
     firebase.auth().signOut()
     commit('setUser', null)
     router.push('/')
+  },
+  atualizaToken ({commit}) {
+    console.log('antes')
+    firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function (idToken) {
+      commit('setTokenf', idToken)
+      console.log('depois')
+    })
   }
 }

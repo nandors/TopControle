@@ -11,7 +11,7 @@ import Vue from 'vue'
 Vue.use(VueFire)
 let db = Firebase.database()
 let tabelaRef = db.ref('lojas')
-toastr.options["positionClass"] = "toast-bottom-right"
+toastr.options['positionClass'] = 'toast-bottom-right'
 
 export default {
   firebase: {
@@ -22,8 +22,8 @@ export default {
       dialog: false,
       items: [],
       valid: true,
-      search: '',
-      }
+      search: ''
+    }
   },
   computed: {
     loading () {
@@ -48,8 +48,7 @@ export default {
     },
     updateRegistro: function (tabela) {
       let propriedade = ''
-      for (propriedade in this.newRegistro)
-      {
+      for (propriedade in this.newRegistro) {
         this.newRegistro[propriedade] = tabela[propriedade]
       }
 /*      this.newRegistro.codigo = tabela.codigo
